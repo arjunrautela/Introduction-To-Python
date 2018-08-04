@@ -17,3 +17,4 @@ while index < len(name):
     index = index + 1
 else:
     print("While loop Finished")
+    print("While Loop Ends")

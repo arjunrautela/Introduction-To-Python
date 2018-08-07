@@ -1,20 +1,21 @@
 # Contains example of Nested Scope.
 
-name = 'This is a global name'
-
+#name = 'This is a global name'
+#__name__ = 'HEllo'
 def greet():
     # Enclosing function
     #name = 'Sammy'
     
     def hello():
         #name  = "Arjun"
-        print('Hello '+name)
+        #print('Hello '+name)
+        print ('__name__ : ', __name__)
     
     hello()
 
 greet()
 
-
+'''
 
 x = 50
 
@@ -42,3 +43,4 @@ func()
 print('Value of x (outside of func()) is: ', x)
 
 
+'''

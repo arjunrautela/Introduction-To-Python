@@ -13,6 +13,5 @@ x = mul
 print("X Mul : ", x(2,3))
 
 # List consisting of function name
-
 func_list = [sum, mul]
 print(func_list[0](2,3))

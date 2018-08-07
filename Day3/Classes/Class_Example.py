@@ -13,4 +13,6 @@ class Employee:
 if __name__ == "__main__":
     emp1 = Employee('Arjun', '10033567')
     emp2 = Employee('Rautela', '10033568')
+    emp1.__init__('Singh', '100')
+    print('Emp1 : ', emp1.name)
     print('Employee Count : ', Employee.intEmpCount)

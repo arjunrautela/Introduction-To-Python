@@ -15,8 +15,7 @@ else:
 #Continue in while loop
 
 index = 0
-while index < len(name):
-    
+while index < len(name):   
     if name[index] == 'p':
         index = index + 1
         continue

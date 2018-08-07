@@ -1,0 +1,25 @@
+{
+    "srvId": "SP0123456789",
+    "version": "01.00.05",
+    "name" : "Encrypted Service for SP01 TA 1.5",
+    "state" : "Active",
+    "taUuid" : "857E6AB2-BD51-562A-9B44-CDBD31EC4D37",
+    "taVersion" : "1.5",
+    "requiredTEECapabilities": [{
+		"group": "device",
+		"name": "id",
+		"values": ["0B000000206269480000000000000000","0C000000206269480000000000000000"]
+	}],
+    "applicationFile" :"aIICPAIFAKAAADACAggAMIIBHmKCAQwCBQDQ",
+    "taUuidv5Params" : "aIICPAIFAKAAADACAggAMIIBHmKCAQwCBQDQ",
+    "decryptionKMSKeyLabel":"TEE.TEST.DEC.ECC.01",
+    "spCaKMSLabel":"X509.CA.TEST.CTAMSPNW.00FDB0D3",
+    "encryptedTaParameters":
+    {
+    	"taEncryptionIV":"Rl58mtNV/3I9nvFuyR3PJA==",
+    	"wrappedTAEncKey":"BDFANp5sOqOwbiLgV2D7QwO3lLjD9GLX3mU",
+    	"offlineSignedPayload":"aYHvAgGhBIHpMIGcQxAgcXnSBiZX7a",
+    	"spOfflinePayloadKMSKeyLabel":"TEE.TEST.DEC.ECC.01",
+    	"spOfflinePayloadCAKMSLabel":"X509.CA.TEST.CTAMSPNW.00FDB0D3"
+    }
+}

@@ -13,9 +13,6 @@ class special_emp(emp):
         print('I am a special emp', self.val)
 
 
-
-
-
 if __name__ == "__main__":
     sp_emp = special_emp('Arjun')
     sp_emp.display()

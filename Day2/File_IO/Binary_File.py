@@ -4,6 +4,10 @@ import os
 
 print(os.curdir)
 
-f = open("myfile.bin", "rb")
+file_name = 'C:\\Projects\\Introduction-To-Python\\Day2\\File_IO\\User_Input.py'
+#file_name = 'myfile.bin'
+f = open(file_name, "rb")
 
-print(f.read(10))
+print(f.read(1))
+
+f.close()

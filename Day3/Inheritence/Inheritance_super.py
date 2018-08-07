@@ -20,6 +20,7 @@ class Student(Person):
     def __init__(self, student_name, student_age, student_id):
         #Person.__init__(self, student_name, student_age)
         super().__init__(student_name, student_age)
+        #super(Student, self).__init__(student_name, student_age)
         self.studentId = student_id
 
     def get_id(self):

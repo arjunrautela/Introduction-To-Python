@@ -1,18 +1,33 @@
-# Inheritence Example
+# Inhertance Example :
+class Person:
+    # Constructor
+    def __init__(self, name):
+        self.name = name
+ 
+    # To get name
+    def getName(self):
+        return self.name
+ 
+    # To check if this person is employee
+    def isEmployee(self):
+        return False
+ 
+ 
+# Inherited or Sub class (Note Person in bracket)
+class Employee(Person):
+    '''
+    def __init__(self, name ,dept):
+        Person.__init__(self,name)
+        self.dept = dept
+    '''
+    # Here we return true
+    def isEmployee(self):
+        return True
 
-class emp:
-    def __init__(self, val):
-        self.val = val
-    
-    def display(self):
-        print(self.val)
+emp = Person('Person1')
+print('Emp Name : ', emp.getName(), '\nisEmployee : ', emp.isEmployee())
 
+#emp1 = Employee('Person2', 'MFS')
+emp1 = Employee('Person2')
 
-class special_emp(emp):
-    def display(self):
-        print('I am a special emp', self.val)
-
-
-if __name__ == "__main__":
-    sp_emp = special_emp('Arjun')
-    sp_emp.display()
+print('Emp Name : ', emp1.getName(), '\nisEmployee : ', emp1.isEmployee())

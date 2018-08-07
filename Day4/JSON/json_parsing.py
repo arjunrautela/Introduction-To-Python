@@ -21,13 +21,14 @@ data['people'].append({
     'from': 'Alabama'
 })
 
-with open('data.json', 'w') as outfile:  
+json_file = 'C:\\Projects\\Introduction-To-Python\\Day4\\JSON\\data.json'
+with open(json_file, 'w') as outfile:  
     json.dump(data, outfile)
 
 '''
 Read json data
 '''
-with open('data.json') as json_file:  
+with open(json_file) as json_file:  
     data = json.load(json_file)
     #print data
     

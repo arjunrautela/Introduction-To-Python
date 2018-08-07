@@ -1,13 +1,22 @@
-import ConfigParser
-
+#import ConfigParser
+import configparser as ConfigParser
 config = ConfigParser.ConfigParser()
-config.read('config_sample.config')
+config_file = 'C:\\Projects\\Introduction-To-Python\\Day3\\ConfigParser_Module\\config_sample.config'
+config.read(config_file)
 
-'''
-print config.sections()
-print config.get('vgerndvud1479', 'hostname')
+print (config.sections())
+print (config.get('vgerndvud1479', 'hostname'))
 #print config.get('vgerndvud1477', 'hostname')
-print config.options('vgerndvud1479')
+print (config.options('vgerndvud1479'))
+
+
+
+
+
+
+
+
+
 '''
 d = {}
 fd={}
@@ -22,7 +31,7 @@ for section in config.sections():
     d = {}
 print(fd)
 
-'''
+
         options = config.options(section)
         print options
         for option in options:

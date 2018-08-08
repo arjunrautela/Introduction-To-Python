@@ -5,7 +5,7 @@ def starts_with():
     for line in hand:
         line = line.rstrip()
         if re.search('^From:', line):
-            print line
+            print (line)
     hand.close()    
 
 
@@ -14,7 +14,7 @@ def char_match():
     for line in hand:
         line = line.rstrip()
         if re.search('^F...m', line):
-            print line
+            print (line)
     hand.close()
 
 def one_or_more():
@@ -22,12 +22,12 @@ def one_or_more():
     for line in hand:
         line = line.strip()
         if re.search('^From:.+n@', line):
-            print line
+            print (line)
     hand.close()
 def extract_data():
     s = 'Hello from csev@umich.edu to cwen@iupui.edu about the meeting @2PM'
     lst = re.findall('\S+@\S+', s)
-    print lst
+    print (lst)
 
 def extract_data_file():
     hand = open('mbox.txt')
@@ -35,7 +35,7 @@ def extract_data_file():
         line = line.rstrip()
         #lst = re.findall('\S+@\S+', line)
         lst = re.findall('[a-zA-Z0-9]\S+@\S+[a-zA-Z]', line)
-        print lst
+        print (lst)
     hand.close()
 if __name__ == "__main__":
     #starts_with()

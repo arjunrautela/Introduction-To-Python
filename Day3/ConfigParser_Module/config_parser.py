@@ -1,6 +1,6 @@
 #import ConfigParser
-import configparser as ConfigParser
-config = ConfigParser.ConfigParser()
+import configparser 
+config = configparser.ConfigParser()
 config_file = 'C:\\Projects\\Introduction-To-Python\\Day3\\ConfigParser_Module\\config_sample.config'
 config.read(config_file)
 

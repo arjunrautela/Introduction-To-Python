@@ -3,7 +3,7 @@ class Person:
     # Constructor
     def __init__(self, name):
         self.name = name
- 
+    
     # To get name
     def getName(self):
         return self.name
@@ -11,7 +11,6 @@ class Person:
     # To check if this person is employee
     def isEmployee(self):
         return False
- 
  
 # Inherited or Sub class (Note Person in bracket)
 class Employee(Person):

@@ -7,9 +7,12 @@ cur = conn.cursor()
 cur.execute('DROP TABLE IF EXISTS Tracks')
 
 cur.execute('CREATE TABLE Tracks (title TEXT, plays INTEGER)')
+insert_command = 'INSERT INTO Tracks (title, plays) VALUES ({}, {})'.format( "'Thunderstruck'", 20 )
 
-cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )',( 'Thunderstruck', 20 ) )
+#print(insert_command)
+#cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )',( 'Thunderstruck', 20 ) )
 
+cur.execute(insert_command )
 
 cur.execute('INSERT INTO Tracks (title, plays) VALUES ( ?, ? )',( 'My Way', 15 ) )
 

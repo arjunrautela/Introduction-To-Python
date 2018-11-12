@@ -12,11 +12,17 @@ class Employee:
         self.emp_id = emp_id
         Employee.intEmpCount += 1
     
+    def __call__(self):
+        return ("In Call Method")
+    
     def getEmpDetails(self):
         return "\nName : " + self.name +', \nId :' + self.emp_id
 
 
 if __name__ == "__main__":
+    emp1 = Employee('Arjun', '10033567')
+    print('Emp1 : ', emp1())
+    '''
     emp1 = Employee('Arjun', '10033567')
     emp2 = Employee('Rautela', '10033568')
     emp3 = emp1
@@ -28,3 +34,4 @@ if __name__ == "__main__":
 
     print('Employee.__dict__ : ', Employee.__dict__)
     print('emp1.__dict__ : ', emp1.__dict__)
+    '''

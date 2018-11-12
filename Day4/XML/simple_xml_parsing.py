@@ -13,10 +13,12 @@ xml_input = '''
         </user>
     </users>
 </stuff>'''
-
+print(xml_input)
 
 
 stuff = ET.fromstring(xml_input)
+#print('root: ',stuff.getroot())
+
 lst = stuff.findall('users/user')
 
 print('list : ', lst)

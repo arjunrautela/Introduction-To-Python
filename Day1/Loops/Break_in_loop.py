@@ -5,7 +5,7 @@ name = 'Captain'
 #Break Example in for loop
 
 for ch in name:
-    if ch == 'x':
+    if ch == 'p':
         break
     print ("Ch is : ", ch)
 else:

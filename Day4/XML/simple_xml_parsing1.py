@@ -34,6 +34,7 @@ xml_input = '''<?xml version="1.0" encoding="UTF-8"?>
 
 #stuff = ET.fromstring(xml_input)
 stuff = ET.parse('simple.xml')
+print('root: ', stuff.getroot())
 lst = stuff.findall('books/book')
 
 print('list : ', lst)

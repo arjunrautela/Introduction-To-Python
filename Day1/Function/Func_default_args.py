@@ -7,4 +7,5 @@ def func_def_args(str_data, delim = ' '):
 
 data = 'The quick brown fox jumps over the lazy dog'
 func_def_args(data, 'f')
+#func_def_args(data)
 

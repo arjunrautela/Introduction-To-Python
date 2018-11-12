@@ -24,9 +24,9 @@ for row in cur:
     print (row)
     
 
-cur.execute('DELETE FROM Tracks WHERE plays < 100')
+#cur.execute('DELETE FROM Tracks WHERE plays < 100')
 #UPDATE Tracks SET plays = 16 WHERE title = 'My Way'
 
-conn.commit()
+#conn.commit()
 
 conn.close()

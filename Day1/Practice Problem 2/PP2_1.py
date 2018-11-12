@@ -3,7 +3,7 @@
 #Problem 1
 # Check given number is even or odd
 
-num = 20
+num = 21
 
 if num%2 == 0:
     print("Number is even")

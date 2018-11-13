@@ -4,14 +4,13 @@
 #file_name = 'C:\\Projects\\Introduction-To-Python\\Day2\\mbox.txt'
 file_name = 'C:\\Projects\\Introduction-To-Python\\Day2\\File_IO\\User_Input.py'
 file_handle = open(file_name)
+#print(file_handle)
 
 #print('All Lines :', file_handle.readlines())
 
 #print('Read() : ', file_handle.read())
 
-print('readline : ',file_handle.readline()) 
-
-
+#print('readline : ',file_handle.readline()) 
 
 
 # print each line:

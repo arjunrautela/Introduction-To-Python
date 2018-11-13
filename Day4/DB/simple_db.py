@@ -1,7 +1,7 @@
 import sqlite3
 
 conn = sqlite3.connect('music.sqlite3')
-
+#DB_CONN_STRING = 'ADMGEMALTO'+'/'+'ADMGEMALTO'+'@//'+'wlnode1vip'+':'+'1525'+'/'+'CPSDB'
 cur = conn.cursor()
 
 cur.execute('DROP TABLE IF EXISTS Tracks')
@@ -20,9 +20,10 @@ conn.commit()
 
 cur.execute('Select title, plays from Tracks ')
 print (cur.fetchall())
+'''
 for row in cur:
     print (row)
-    
+'''
 
 #cur.execute('DELETE FROM Tracks WHERE plays < 100')
 #UPDATE Tracks SET plays = 16 WHERE title = 'My Way'

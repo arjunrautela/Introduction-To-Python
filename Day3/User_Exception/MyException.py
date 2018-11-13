@@ -6,7 +6,7 @@ class myException(Exception):
         self.value = value
     
     def __str__(self):
-        return self.value
+        return "Following Excepiton : " + self.value
     
 
 if __name__ == "__main__":

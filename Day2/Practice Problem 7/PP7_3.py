@@ -19,7 +19,7 @@ for line in file_handle:
         print(total)
 print('Total : ', total)
 
-
+'''
 file_handle.seek(0)
 
 for line in file_handle:
@@ -27,6 +27,6 @@ for line in file_handle:
         print(line)
 
 file_handle.close()
-
+'''
 
 

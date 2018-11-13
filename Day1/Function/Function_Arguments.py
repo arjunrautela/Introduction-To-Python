@@ -18,9 +18,10 @@ print("Id of y : ", id(y))
 
 sum_x_y = sum(x,y)
 print('Sum of x and y', sum_x_y)
+print("x after: ", x)
+
+
 '''
-
-
 ## Mutable object passed to it
 # function that accept list as input and append a value to it
 
@@ -34,3 +35,7 @@ print("Id of min_name : ", id(min_name))
 
 list_func(min_name)
 print("min_name list after function call : ", min_name)
+
+
+
+#\\noi1file01.apac.sfnt.local\Global\Python

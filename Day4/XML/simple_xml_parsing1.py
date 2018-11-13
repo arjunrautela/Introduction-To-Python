@@ -32,10 +32,18 @@ xml_input = '''<?xml version="1.0" encoding="UTF-8"?>
 	</book>
 </bookstore>'''
 
-#stuff = ET.fromstring(xml_input)
-stuff = ET.parse('simple.xml')
-print('root: ', stuff.getroot())
-lst = stuff.findall('books/book')
+stuff = ET.fromstring(xml_input)
+xml_file_name = 'C:\\Projects\\Introduction-To-Python\\Day4\\XML\\simple.xml'
+#stuff = ET.parse(xml_file_name)
+#print('root: ', stuff.getroot())
+#lst = stuff.findall('.')
+#lst = stuff.findall('./book/year')
+lst = stuff.findall('book')
+
+print('list : ', lst)
+'''
+lst = stuff.findall('book')
+#lst = stuff.findall('books/book')
 
 print('list : ', lst)
 
@@ -45,3 +53,4 @@ for item in lst:
     print( 'Title : ', item.find('title').text)
     print('Author : ', item.find('author').text)
     print('Title Attribute : ', item.get('category'))
+'''

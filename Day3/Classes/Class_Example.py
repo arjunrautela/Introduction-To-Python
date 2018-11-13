@@ -11,9 +11,7 @@ class Employee:
         self.name = name
         self.emp_id = emp_id
         Employee.intEmpCount += 1
-    
-    def __call__(self):
-        return ("In Call Method")
+        
     
     def getEmpDetails(self):
         return "\nName : " + self.name +', \nId :' + self.emp_id
@@ -21,7 +19,8 @@ class Employee:
 
 if __name__ == "__main__":
     emp1 = Employee('Arjun', '10033567')
-    print('Emp1 : ', emp1())
+    print('Employee Count : ', Employee.intEmpCount)
+    
     '''
     emp1 = Employee('Arjun', '10033567')
     emp2 = Employee('Rautela', '10033568')

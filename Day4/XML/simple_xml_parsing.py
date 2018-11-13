@@ -7,17 +7,17 @@ xml_input = '''
             <id>001</id>
             <name>Chuck</name>
         </user>
-        <user x="7">
+        <user x="7" y="8">
             <id>009</id>
             <name>Brent</name>
         </user>
     </users>
 </stuff>'''
-print(xml_input)
+#print(xml_input)
 
 
 stuff = ET.fromstring(xml_input)
-#print('root: ',stuff.getroot())
+
 
 lst = stuff.findall('users/user')
 
@@ -29,5 +29,6 @@ for item in lst:
     print( 'Name', item.find('name').text)
     print( 'id', item.find('id').text)
     print ('Attribute', item.get('x'))
+    print ('Attribute', item.attrib)
     
 

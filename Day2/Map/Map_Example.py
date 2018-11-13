@@ -10,6 +10,4 @@ print('Output : ', list(map(square_of_num, my_nums)))
 
 # Map With Lambda
 
-print(list(map(lambda x,y : x*y, [1,2,3,4],[1,2,3,4])))
-
-
+#print(list(map(lambda x,y : x*y, [1,2,3,4],[1,2,3,4])))

@@ -9,7 +9,7 @@ def timing_function(some_function):
         t1 = time.time()
         some_function()
         t2 = time.time()
-        return "Time it took to run the function: " + str((t2 - t1)) + "\n"
+        return "Time it took to run the function: " + str(t2 - t1) + "\n"
     return wrapper
 
 @timing_function

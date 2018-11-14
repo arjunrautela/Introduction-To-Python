@@ -11,7 +11,8 @@ class myException(Exception):
 
 if __name__ == "__main__":
     try:
-        raise(myException('Something wrong'))
+        #raise(myException('Something wrong'))
+        raise Exception('Some thing wrong')
         #raise myException
-    except myException as myexp:
+    except Exception as myexp:
         print(myexp)

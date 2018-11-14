@@ -10,6 +10,8 @@ parser.add_argument('--flag', required=False, action='store_true',help='Environm
 
 args = parser.parse_args()
 
+print('args : ', args)
+
 print('Env : ', args.env)
 print('Sol : ', args.sol)
 print('flag : ', args.flag)

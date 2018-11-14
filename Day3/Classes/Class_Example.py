@@ -18,8 +18,27 @@ class Employee:
 
 
 if __name__ == "__main__":
+    #print("Employee.__dict__", Employee.__dict__)
     emp1 = Employee('Arjun', '10033567')
-    print('Employee Count : ', Employee.intEmpCount)
+    emp2 = Employee('Arjun1', '1003df3567')
+    
+    
+    
+    
+    print("emp1.__dict__", emp1.__dict__)
+    emp1.intEmpCount = 5
+    print("emp1.__dict__", emp1.__dict__)
+    Employee.intEmpCount = 10
+    print("Employee.__dict__", Employee.__dict__)
+    '''
+    print('Employee Count : ', emp1.intEmpCount)
+    
+    emp2 = Employee('Rautela', '10033568')
+    print('Employee Count : ', emp2.intEmpCount)
+    emp3 = emp1
+    print("emp3.name: ", emp3.name)
+    print('Employee Count : ', emp3.intEmpCount)
+    '''
     
     '''
     emp1 = Employee('Arjun', '10033567')

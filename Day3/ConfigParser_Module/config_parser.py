@@ -9,15 +9,6 @@ print (config.get('vgerndvud1479', 'hostname'))
 #print config.get('vgerndvud1477', 'hostname')
 print (config.options('vgerndvud1479'))
 
-
-
-
-
-
-
-
-
-'''
 d = {}
 fd={}
 for section in config.sections():
@@ -30,7 +21,7 @@ for section in config.sections():
     fd[section] = d
     d = {}
 print(fd)
-
+'''
 
         options = config.options(section)
         print options

@@ -12,7 +12,7 @@ class Calculator:
             raise myException('Error Occured')
 
 if __name__ == "__main__":
-    calc = Calculator('2','3')
+    calc = Calculator(2,'3')
     #print(dir(Calculator))
     try:
         print('Sum : ', calc.sum())
